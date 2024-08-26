@@ -87,10 +87,40 @@
                 column-gap: 15px;
                 row-gap: 30px;
             }
+
+            .header {
+                height: 60px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+            }
+
+            .left-section {
+                background-color: lightcoral;
+                width: 200px;
+            }
+
+            .middle-section {
+                background-color: lightgreen;
+                flex: 1;
+                margin-left: 150px;
+                margin-right: 150px;
+            }
+
+            .right-section {
+                background-color: lightcoral;
+                width: 200px;
+            }
         </style> 
     </head>
     <body>
-        <input class="search-bar" type="text" placeholder="Search">
+        <div class="header">
+            <div class="left-section">Left section</div>
+            <div class="middle-section">
+                <input class="search-bar" type="text" placeholder="Search">
+            </div>
+            <div class="right-section">Right Section</div>
+        </div>
         <div class="video-grid">
             <div class="video-preview">
                 <div>
