@@ -19,6 +19,7 @@
             left:0;
             right:0;
             height: 50px;
+            z-index: 1;
             ">Header</div>
         <div style="
         background-color: aqua;
@@ -27,7 +28,28 @@
         bottom: 0;
         top: 50px;
         width: 60px;
-        ">Sidebar</div>
+        padding-top: 50px;
+        ">Sidebar
+        <div style="
+        background-color: red;
+        position: absolute;
+        top:0;
+        right:0;
+        ">X
+        <!-- This X we can assume to close the sidebar -->
+        <!-- This div is now using Sidebar as reference for position -->
+        </div>
+        </div>
+        <div style="
+        background-color: red;
+        position: absolute; 
+        /* If we use absolute it means it is rendered on browser page an not on browser window like we see in Header and Sidebar(position: fixed); */
+        /* top:10px; */
+        /* If we provide this value this div appears above of Header, so we need to use z-index in Header and set to value grater than z-index of this div(default to 0) */
+        top: 60px;
+        right: 20px;
+        /* There is better use of position Absolute see Sidebar div */
+        ">Absolute</div>
         <div style="
         background-color: lightblue;
         height: 300px;
@@ -40,5 +62,22 @@
         height: 300px;
         width: 300px;
         ">div2</div>
+
+        <div style="
+            background-color: lightseagreen;
+            height: 300px;
+            width: 300px;
+            position: relative;
+            /* If i give position relative nothing happens.The real use of relative position is when we combine with absolute postion see below*/
+        ">div3
+            <div style="
+            background-color: black;
+            color: white;
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            /* So if we scroll the page this div also scrolls and will not stick on browser page. This is how relative with absolute is used */
+            ">5:00</div>
+        </div>
     </body>
 </html>
