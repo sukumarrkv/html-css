@@ -1,5 +1,5 @@
 .header {
-    height: 50px;
+    height: 60px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -79,6 +79,46 @@
     margin-right: 10px;
 }
 
+.search-button,
+.voice-search-button,
+.create-button,
+.youtube-apps-button,
+.notification-info {
+    position:relative;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.search-button .tooltip,
+.voice-search-button .tooltip,
+.create-button .tooltip,
+.youtube-apps-button .tooltip,
+.notification-info .tooltip{
+    position: absolute;
+    background-color: rgb(117, 117, 117);
+    color: white;
+    font-family: Roboto, Arial;
+    font-size: 12px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+    bottom: -30px;
+    border-radius: 2px;
+    opacity: 0;
+    transition: opacity 0.15s;
+    pointer-events: none;
+    white-space: nowrap;
+}
+
+.search-button:hover  .tooltip,
+.voice-search-button:hover .tooltip,
+.create-button:hover .tooltip,
+.youtube-apps-button:hover .tooltip,
+.notification-info:hover .tooltip {
+    opacity: 1;
+}
 .voice-search-button {
     border-width: 1px;
     border: none;
@@ -119,14 +159,15 @@
 }
 
 .notifications-number{
-    background-color: red;
+    background-color: rgb(197, 0, 0);
     color: white;
-    height: 14px;
-    width: 14px;
     position: absolute;
-    top: 0;
-    right:0;
-    font-size: 15px;
-    border-radius: 7px;
+    top: -2px;
+    right:-2px;
+    font-size: 12px;
+    border-radius: 8px;
     padding-left: 5px;
+    padding-right: 4px;
+    padding-top: 1px;
+    padding-bottom: 1px;
 }

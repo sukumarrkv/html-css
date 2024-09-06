@@ -3,5 +3,31 @@
     left: 0;
     bottom: 0;
     top:50px;
-    background-color: aqua;
+    background-color: white;
+    width: 72px;
+    z-index: 200;
+}
+
+.sidebar-items {
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    padding-top: 10px;
+}
+
+.sidebar-items:hover {
+    background-color: rgb(235, 235, 235);
+}
+
+.sidebar-items img {
+    height: 24px;
+}
+
+.sidebar-items div {
+    font-family: Roboto, Arial;
+    font-size: 10px;
+    padding-top: 8px;
 }
