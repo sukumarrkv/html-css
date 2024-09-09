@@ -4,7 +4,7 @@ p{
 }
 
 body {
-    /* This is inherited to all elements below body html element. This is called inheritance We can remove font-family: Roboto, Arial; from all other fcss files.*/
+    /* This is inherited to all elements (only text elements will be inherited) below body html element. This is called inheritance We can remove font-family: Roboto, Arial; from all other fcss files.*/
     font-family: Roboto, Arial;
     height: 1000px;
     padding-top: 75px;
