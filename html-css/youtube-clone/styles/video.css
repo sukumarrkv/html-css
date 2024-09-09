@@ -73,6 +73,24 @@
     row-gap: 30px;
 }
 
+@media (max-width: 870px){
+    .video-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 1120px){
+    .video-grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width:871px) and (max-width:1119px){
+    .video-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
 .thumbnail-info {
     position: relative;
 }
@@ -90,5 +108,13 @@
     padding-left: 4px;
     padding-right: 4px;
     padding-top: 4px;
+    /* css short hand property: 
+    Instaed of line 108,109,110 and if have padding-bottom: 4px we can replace all those four lines with
+    padding: 4px;
+    Other padding css shorthand properties:
+    padding: 4px 10px:
+    padding 4px 10px 20px 30px;
+    Same applies for margin
+    */
     border-radius: 2px;
 }

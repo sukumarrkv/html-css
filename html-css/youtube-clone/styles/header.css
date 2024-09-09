@@ -72,6 +72,9 @@
     border-width: 1px;
     border-style: solid;
     border-color: rgb(198, 198, 198);
+    /* css shorthand property: 
+    Instaed of line 72,73 and 74 we can have one below line: 
+    border:  1px solid rgb(198, 198, 198);*/
     background-color: rgb(244, 244, 244);
     height: 40px;
     width: 65px;
@@ -98,7 +101,6 @@
     position: absolute;
     background-color: rgb(117, 117, 117);
     color: white;
-    font-family: Roboto, Arial;
     font-size: 12px;
     padding-top: 4px;
     padding-bottom: 4px;
